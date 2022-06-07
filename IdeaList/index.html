@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Idea list</title>
+	<link rel="stylesheet" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="center">
+	<div id="myIdeas"  class="header">
+		<h1 class="center"> Idea List</h1> <br>
+	</div>
+	
+	<form class="center">
+
+		<label for="projectDate">Project Date</label>
+		<input type="date" required id="Project Date" /><br />
+
+		<label for="projectName">Project Name</label>
+		<input type="text" id="Project Name" /><br />
+  
+		<label for="projectType"> Project Type</label>
+			<select name="projectType">
+				<option value="S"> Sewing</option>
+				<option value="SM"> Soap Making </option>
+				<option value="C"> Candles </option>
+		 	 </select> <br>
+  
+	</form> <br>
+
+<h2 class="center">Materials Needed </h2>
+<ol bold id="materialsNeeded" class="materialsNeeded"><br>
+
+  <ul class="center"> Item 1 </ul> <br>
+	<ol>
+	<ul class="center"> Quantity</ul> <br>
+	
+	<div class="center">
+	<div class="counter">
+		<span class="down" onClick='decreaseCount(event, this)'>-</span>
+		<input type="text" value="1">
+		<span class="up" onClick='increaseCount(event, this)'>+</span>
+	</div>
+
+	<div class="center">
+		<ul>Cost</ul>
+			<form method="post" action="#">
+				<label for="currency-field">Enter Amount</label>
+				<input type="text" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$1">
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</div><br>
+
+<ul class="center"> Item 2 </ul> <br>
+	<ol>
+	<ul class="center"> Quantity</ul> <br>
+	
+	<div class="center">
+	<div class="counter">
+		<span class="down" onClick='decreaseCount(event, this)'>-</span>
+		<input type="text" value="1">
+		<span class="up" onClick='increaseCount(event, this)'>+</span>
+	</div>
+
+	<div class="center">
+		<ul>Cost</ul>
+			<form method="post" action="#">
+				<label for="currency-field">Enter Amount</label>
+				<input type="text" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$1">
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</div><br>
+
+	<ul class="center"> Item 3 </ul> <br>
+	<ol>
+	<ul class="center"> Quantity</ul> <br>
+	
+	<div class="center">
+	<div class="counter">
+		<span class="down" onClick='decreaseCount(event, this)'>-</span>
+		<input type="text" value="1">
+		<span class="up" onClick='increaseCount(event, this)'>+</span>
+	</div>
+
+	<div class="center">
+		<ul>Cost</ul>
+			<form method="post" action="#">
+				<label for="currency-field">Enter Amount</label>
+				<input type="text" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$1">
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</div><br>
+
+<div class="center">
+<h2> Notes </h2>
+<textarea class="center" rows="10" cols="50" name="notes" placeholder="Write Any Notes Here"></textarea>
+</div> <br>
+
+<div class="center">
+	<button class="btn btn-success btn-lg"> Submit </button>
+	<button class="btn btn-success btn-lg"> Cancel </button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

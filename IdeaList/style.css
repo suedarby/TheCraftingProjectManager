@@ -1,0 +1,78 @@
+body {
+	background-color: aliceblue;
+	display:block;
+	align-items: left;
+	text-align: left;
+	justify-content: left;
+	text-align: left;
+	font-size: 25px;
+	border: 10px, groove, black;
+	margin: 80px;
+	padding: 10px;
+
+}
+div {
+	font-size:25px;
+	display:block; 
+	align-items:left;
+	text-align: left;
+	justify-content: left;
+}
+
+.materialsNeeded {
+	display:block;
+	font-size: 25px;
+	text-align: left;
+	align-items: left;
+	justify-content: left;
+	border: black, solid;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Times New Roman', Times, serif;
+  }
+
+.counter {
+width: 150px;
+margin: auto;
+display:contents;
+align-items: left;
+justify-content: left;
+}
+
+.counter input {
+    width: 50px;
+    border: 0;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: left;
+    background: #0052cc;
+    color: #fff;
+    appearance: none;
+    outline: 0;
+}
+.counter span {
+    display: contents;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #0052cc;
+    user-select: none;
+}
+.text {
+	font-size: 25px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+	text-align: center;
+	text-shadow: bisque;
+}
+
+.center{
+	text-align: center;
+  }
+
+ 
