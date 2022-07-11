@@ -1,17 +1,31 @@
+import ReactDOM from 'react-dom';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Home from './home';
+import About from './about';
+import Features from './features';
+import TaskManager from './TaskManager';
+import './App.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const Index = ({ pathname }) => {
+  switch (pathname) {
+    case '/about':
+      return <About />;
+    case '/features':
+      return <Features />;
+    case '/home':
+      return <Home />  
+    default:
+      return <TaskManager />;
+  }};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+let pathname = window.location.pathname;
+
+ReactDOM.render(<Index pathname={pathname} />, document.getElementById('root'));
+
+window.addEventListener('popstate', () => {
+  pathname = window.location.pathname;
+});
+export default Index;
+
