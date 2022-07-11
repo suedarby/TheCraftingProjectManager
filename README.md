@@ -43,3 +43,5 @@ The functionality is based on a Task-Manager repo by https://github.com/Tammibri
   -   Where it was last seen
   -   Tracks the quantity of items in the stash and adds to the shopping list when the quantity gets low (future feature)
 - Budgets will show if a project is over or under a targeted budget to assist with money management.(future feature)
+
+Note that the original project is at https://github.com/woz-u/Crafting-Group where I had 135 or so commits while developing this project.
